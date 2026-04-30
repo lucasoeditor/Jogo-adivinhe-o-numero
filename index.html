@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adivinhe o numero</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <nav>
+                <h1 id="title">Adivinhe o Número</h1>
+                <p id="subtitle">
+                    o Jogo escolherá um numero de
+                    <span>1 a 100</span> aletóriamente, sua função no jogo é
+                    tentar acertar o número aleatório escolhido pela maquina,
+                    ela te dará dicas se o numero é maior ou menor, você tem
+                    apenas 10 chances para acertar o numero escolhido
+                </p>
+            </nav>
+
+            <section>
+                <p id="tentativas">10 tentativas restantes</p>
+                <input type="number" id="valor" placeholder="Insira o número aqui"></input>
+                <button onclick="jogo()" id="chutar">Chutar</button>
+                <p id="dica"></p>
+                <p id="resultado"></p>
+            </section>
+        </main>
+    </body>
+</html>
