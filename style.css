@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 body {
@@ -9,6 +10,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: #ffead0;
+    background: linear-gradient(
+        46deg,
+        rgba(255, 234, 208, 1) 0%,
+        rgba(150, 97, 107, 1) 100%
+    );
 }
 
 main {
@@ -16,7 +23,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: gray;
+    background: #37505c;
     height: 500px;
     width: 800px;
     padding: 30px;
@@ -50,6 +57,11 @@ input {
     border-radius: 20px;
     text-align: center;
     height: 20px;
+    background-color: #113537;
+}
+
+input::placeholder {
+    color: white;
 }
 
 button {
@@ -58,6 +70,8 @@ button {
     width: 100px;
     height: 25px;
     border: 1px solid black;
+    background-color: #113537;
+    color: white;
 }
 
 button:disabled {
